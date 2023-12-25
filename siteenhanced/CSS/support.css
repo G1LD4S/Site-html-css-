@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100vw;
+    transition: 500ms;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+    transition: 500ms;
+}
+.dark-mode nav{
+    background-color: rgb(71, 116, 230);
+    transition: 500ms;
+}
+.dark-mode .block2{
+    background-color: rgb(114, 161, 224);
+    transition: 500ms;
+}
+.dark-mode .menu.active{
+    background-color: rgb(114, 161, 224);
+    transition: 500ms;
+}
+.dark-mode #pagetop{
+    color: rgba(250, 43, 43, 0.798);
+    transition: 500ms;
+}
+.dark-mode .menu a{
+    color: white;
+    transition: 500ms;
+}
+.dark-mode .menu a:hover{
+    color: rgba(250, 43, 43, 0.798);
+    transition: 500ms;
+}
+.dark-mode .bar{
+    background-color: white;
+    transition: 500ms;
+}
+#block1{
+    display: flex;
+    flex-direction:row;
+    width: 100vw;
+}
+#pagetop{
+    justify-content: center;
+    display: flex;
+    color: rgb(190, 86, 51);
+    margin-top: 2vh;
+    margin-left: 35vw;
+}
+nav{
+    background-color: rgb(71, 190, 230);
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#iconlol{
+    margin-top: 10px;
+    margin-left: 2vw;
+    width: 18vh;
+    height: 10vh;
+    justify-content: flex-start;
+    display: flex;
+}
+#place{
+    max-height: 70vh;
+    flex-direction: column;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    min-height: 70vh;
+    justify-content: space-around;
+}
+.places{
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    transition: 0.5s;
+} 
+.places:hover{
+    background: var(--clr);
+}
+.block2{
+    background-color: lightblue;
+    width: 95vw;
+    max-height: 8vh;
+}
+.hautdepage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+#compte{
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 20vw;
+}
+#block3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+.pfp{
+    height: 20vh;
+    width: 11vw;
+    margin-bottom: 5vh;
+}
+#descriptions{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+/* Styles pour le menu Burger */
+.burger-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Marge intérieure de l'élément*/
+}
+/* Styles pour l'icône du menu burger */
+.burger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    cursor: pointer; /* Changement du curseur sur la classe */
+    padding: 14px;
+    width: 3vw;
+    margin-top: 8px;
+    margin-right: 2vw;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+/* Styles pour le menu de Navigation */
+.menu {
+    list-style-type: none;
+    margin-left: 90vw;
+    padding: 0;
+    display: none;
+}
+.menu li{
+    padding: 15px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+}
+.menu a:hover{
+    color: rgb(190, 86, 51);
+    transition: 0.5s;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 10%;
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 1024px){
+    #pagetop{
+        justify-content: center;
+        display: flex;
+        color: rgb(190, 86, 51);
+    }
+    #block1{
+        display: flex;
+        flex-direction:column;
+    }
+    nav{
+        background-color: rgb(71, 190, 230);
+        min-width: 100vw;
+        max-height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+    }
+    #place{
+        justify-content: center;
+        flex-direction: row;
+        display: flex;
+        margin-top: 1vh;
+        margin-left: 0;
+    }
+    .block2{
+        min-width: 100vw;
+        max-height: 5vh;
+    }
+    .places{
+        width: 12vw;
+        height: 7vh;
+        display: flex;
+        margin-right: 2vw;
+    }
+    #iconlol{
+        margin-top: 0;
+        margin-left: 0;
+        width: 14vh;
+        height: 8vh;
+    }
+    #block3{
+        margin-left: 0;
+        margin-top: 3vh;
+    }
+    .pfp{
+        height: 10vh;
+        width: 16vw;
+        margin-bottom: 15vh;
+        margin-top: 3vh;
+        margin-left: 4vw;
+        flex-direction: column;
+        display: flex;
+    }
+    #descriptions{
+        width: 70vw;
+        margin-left: 6vw;
+    }
+}

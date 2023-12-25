@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+    <main>
+        <h1>Formulaire d'inscription</h1>
+        <hr>
+        <form action="" id="form">
+            <div class="Interface">
+                <label for="pseudo">Identifiant</label>
+                <input type="text" id="pseudo" required>
+            </div>
+            <div id="idError"></div>
+            <div class="Interface">
+                <label for="mail">Mail</label>
+                <input type="email" id="mail" required>
+            </div>
+            <div id="mailError"></div>
+            <div class="Interface">
+                <label for="Mdp">Mot de passe :</label>
+                <input type="password" id="Mdp" required>
+            </div>
+            <div id="mdpError"></div>
+            <fieldset class="boxGenre">
+                <legend>
+                    <legend>Genre</legend>
+                    <div id="genres">
+                        <label for="h">Homme</label>
+                        <input type="radio" name="genre" id="h">
+                        <label for="f">Femme</label>
+                        <input type="radio" name="genre" id="f">
+                    </div>
+                </legend>
+            </fieldset>
+            <fieldset class="boxPays"> <!-- Faire une question en boîte à choix multiples-->
+                <legend>Pays</legend>
+                <select name="" id="pays">
+                    <option value="France">France</option>
+                    <option value="Islande">Islande</option>
+                    <option value="Canarie">Canarie</option>
+                </select>
+            </fieldset>
+            <div class="choixclr">
+                <p>Couleur fond</p>
+                <input type="color" id="color">
+                <hr id="hr2">
+                <p>Couleur texte</p>
+                <input type="color" id="colortxt">
+            </div>
+            <input type="reset">
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
